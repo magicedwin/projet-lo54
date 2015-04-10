@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d8ae2a2-3a46-454b-85f3-77bda78ff443" name="Default" comment="Configuration IntelliJ files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="8d8ae2a2-3a46-454b-85f3-77bda78ff443" name="Default" comment="Configuration IntelliJ workspace">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projet-lo54.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -479,7 +479,7 @@
       <created>1428678693222</created>
       <option name="number" value="Default" />
       <updated>1428678693222</updated>
-      <workItem from="1428678694467" duration="748000" />
+      <workItem from="1428678694467" duration="824000" />
     </task>
     <task id="LOCAL-00001" summary="Configuration IntelliJ files">
       <created>1428679218683</created>
@@ -487,11 +487,17 @@
       <option name="project" value="LOCAL" />
       <updated>1428679218683</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configuration IntelliJ workspace">
+      <created>1428679456063</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1428679456063</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="748000" />
+    <option name="totallyTimeSpent" value="824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -538,7 +544,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Init project" />
     <MESSAGE value="Configuration IntelliJ files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration IntelliJ files" />
+    <MESSAGE value="Configuration IntelliJ workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration IntelliJ workspace" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
