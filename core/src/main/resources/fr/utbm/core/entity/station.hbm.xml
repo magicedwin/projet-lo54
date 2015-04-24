@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="fr.utbm.core.entity">
+	<class name="Station" table="station">
+		<id name="id" column="Sta_Id">
+		</id>
+		<property name="label" column="Sta_Label" type="string"
+			not-null="true" />
+		<many-to-one name="are_id" class="Station">
+			<column name="Are_Id" not-null="true"></column>
+		</many-to-one>
+		<property name="lastcom" column="Sta_Lastcom" type="date" />
+		<property name="valid" column="Sta_Valid" type="byte"
+			not-null="true" />
+		<set name="sensor" table="sensor" fetch="select">
+			<key>
+				<column name="Sta_Id" not-null="true"></column>
+			</key>
+			<one-to-many class="Sensor" />
+		</set>
+	</class>
+</hibernate-mapping>	

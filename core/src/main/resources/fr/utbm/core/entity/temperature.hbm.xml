@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="fr.utbm.core.entity">
+	<class name="Temperature" table="temperature">
+		<id name="id" column="Tmp_Id">
+		</id>
+		<property name="value" column="Tmp_Value" type="float"
+			not-null="true" />
+		<property name="date" column="Tmp_Date" type="date" not-null="true" />
+		<many-to-one name="sen_id" class="Sensor">
+            <column name="Sen_Id" not-null="true"></column>
+        </many-to-one>
+	</class>
+</hibernate-mapping>	

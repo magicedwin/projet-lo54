@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="fr.utbm.core.entity">
+	<class name="Sensor" table="sensor">
+		<id name="id" column="Sen_Id">
+		</id>
+		<property name="label" column="Sen_Label" type="string"
+			not-null="true" />
+		<many-to-one name="sta_id" class="Station">
+			<column name="Sta_Id" not-null="true"></column>
+		</many-to-one>
+		<set name="temperature" table="temperature" fetch="select">
+			<key>
+				<column name="Sen_Id" not-null="true"></column>
+			</key>
+			<one-to-many class="Temperature" />
+		</set>
+
+	</class>
+</hibernate-mapping>	
