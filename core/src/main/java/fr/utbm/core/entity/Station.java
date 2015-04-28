@@ -7,45 +7,15 @@ public class Station {
 
 	private int id;
 	private String label;
-	private Area are_id;
+	private Area area;
 	private Date lastcom;
 	private byte valid;
-	private Set<Sensor> sensor;
-
-	/**
-	 * @return the lastcom
-	 */
-	public Date getLastcom() {
-		return lastcom;
-	}
-
-	/**
-	 * @param lastcom
-	 *            the lastcom to set
-	 */
-	public void setLastcom(Date lastcom) {
-		this.lastcom = lastcom;
-	}
-
-	/**
-	 * @return the valid
-	 */
-	public byte isValid() {
-		return valid;
-	}
-
-	/**
-	 * @param valid
-	 *            the valid to set
-	 */
-	public void setValid(byte valid) {
-		this.valid = valid;
-	}
+	private Set<Sensor> sensors;
 
 	/**
 	 * @return the id
 	 */
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -73,18 +43,33 @@ public class Station {
 	}
 
 	/**
-	 * @return the are_id
+	 * @return the area
 	 */
-	public Area getAre_id() {
-		return are_id;
+	public Area getArea() {
+		return area;
 	}
 
 	/**
-	 * @param are_id
-	 *            the are_id to set
+	 * @param area
+	 *            the area to set
 	 */
-	public void setAre_id(Area are_id) {
-		this.are_id = are_id;
+	public void setArea(Area area) {
+		this.area = area;
+	}
+
+	/**
+	 * @return the lastcom
+	 */
+	public Date getLastcom() {
+		return lastcom;
+	}
+
+	/**
+	 * @param lastcom
+	 *            the lastcom to set
+	 */
+	public void setLastcom(Date lastcom) {
+		this.lastcom = lastcom;
 	}
 
 	/**
@@ -95,18 +80,26 @@ public class Station {
 	}
 
 	/**
-	 * @return the sensor
+	 * @param valid
+	 *            the valid to set
 	 */
-	public Set<Sensor> getSensor() {
-		return sensor;
+	public void setValid(byte valid) {
+		this.valid = valid;
 	}
 
 	/**
-	 * @param sensor
-	 *            the sensor to set
+	 * @return the sensors
 	 */
-	public void setSensor(Set<Sensor> sensor) {
-		this.sensor = sensor;
+	public Set<Sensor> getSensors() {
+		return sensors;
+	}
+
+	/**
+	 * @param sensors
+	 *            the sensors to set
+	 */
+	public void setSensors(Set<Sensor> sensors) {
+		this.sensors = sensors;
 	}
 
 }

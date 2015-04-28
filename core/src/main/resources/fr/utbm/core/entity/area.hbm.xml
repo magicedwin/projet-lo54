@@ -3,16 +3,18 @@
           "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="fr.utbm.core.entity">
-    <class name="Area" table="area">
-        <id name="id" column="Are_Id">
-        </id>
-        <property name="label" column="Are_Label" type="string" not-null="true" />
-        <property name="road" column="Are_Road" type="string" not-null="true" />
-        <set name="station" table="station" fetch="select">
+	<class name="Area" table="area">
+		<id name="id" column="Are_Id">
+		</id>
+		<property name="label" column="Are_Label" type="string"
+			not-null="true" />
+		<property name="road" column="Are_Road" type="string"
+			not-null="true" />
+		<set name="stations" table="station">
 			<key>
 				<column name="Are_Id" not-null="true"></column>
 			</key>
 			<one-to-many class="Station" />
 		</set>
-    </class>
+	</class>
 </hibernate-mapping>	

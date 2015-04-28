@@ -2,14 +2,12 @@ package fr.utbm.core.entity;
 
 import java.util.Set;
 
-
-
 public class Sensor {
 
 	private int id;
 	private String label;
-	private Station sta_id;
-	private Set<Temperature> temperature;
+	private Station station;
+	private Set<Temperature> temperatures;
 
 	/**
 	 * @return the id
@@ -42,32 +40,33 @@ public class Sensor {
 	}
 
 	/**
-	 * @return the sta_id
+	 * @return the station
 	 */
-	public Station getSta_id() {
-		return sta_id;
+	public Station getStation() {
+		return station;
 	}
 
 	/**
-	 * @param sta_id
-	 *            the sta_id to set
+	 * @param station
+	 *            the station to set
 	 */
-	public void setSta_id(Station sta_id) {
-		this.sta_id = sta_id;
+	public void setStation(Station station) {
+		this.station = station;
 	}
 
 	/**
-	 * @return the temperature
+	 * @return the temperatures
 	 */
-	public Set<Temperature> getTemperature() {
-		return temperature;
+	public Set<Temperature> getTemperatures() {
+		return temperatures;
 	}
 
 	/**
-	 * @param temperature the temperature to set
+	 * @param temperatures
+	 *            the temperatures to set
 	 */
-	public void setTemperature(Set<Temperature> temperature) {
-		this.temperature = temperature;
+	public void setTemperatures(Set<Temperature> temperatures) {
+		this.temperatures = temperatures;
 	}
 
 }

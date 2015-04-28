@@ -7,7 +7,7 @@ public class Temperature {
 	private int id;
 	private float value;
 	private Date date;
-	private Sensor sen_id;
+	private Sensor sensor;
 
 	/**
 	 * @return the id
@@ -35,7 +35,7 @@ public class Temperature {
 	 * @param value
 	 *            the value to set
 	 */
-	public void setValue(int value) {
+	public void setValue(float value) {
 		this.value = value;
 	}
 
@@ -55,25 +55,18 @@ public class Temperature {
 	}
 
 	/**
-	 * @return the sen_id
+	 * @return the sensor
 	 */
-	public Sensor getSen_id() {
-		return sen_id;
+	public Sensor getSensor() {
+		return sensor;
 	}
 
 	/**
-	 * @param sen_id
-	 *            the sen_id to set
+	 * @param sensor
+	 *            the sensor to set
 	 */
-	public void setSen_id(Sensor sen_id) {
-		this.sen_id = sen_id;
-	}
-
-	/**
-	 * @param value the value to set
-	 */
-	public void setValue(float value) {
-		this.value = value;
+	public void setSensor(Sensor sensor) {
+		this.sensor = sensor;
 	}
 
 }

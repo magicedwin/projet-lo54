@@ -6,57 +6,67 @@ public class Area {
 
 	private int id;
 	private String label;
-	private String road;	//Peut être null
-	private Set<Station> station;
+	private String road; // Peut être null
+	private Set<Station> stations;
+
 	/**
 	 * @return the id
 	 */
 	public int getId() {
 		return id;
 	}
+
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	/**
 	 * @return the label
 	 */
 	public String getLabel() {
 		return label;
 	}
+
 	/**
-	 * @param label the label to set
+	 * @param label
+	 *            the label to set
 	 */
 	public void setLabel(String label) {
 		this.label = label;
 	}
+
 	/**
 	 * @return the road
 	 */
 	public String getRoad() {
 		return road;
 	}
+
 	/**
-	 * @param road the road to set
+	 * @param road
+	 *            the road to set
 	 */
 	public void setRoad(String road) {
 		this.road = road;
 	}
+
 	/**
-	 * @return the station
+	 * @return the stations
 	 */
-	public Set<Station> getStation() {
-		return station;
+	public Set<Station> getStations() {
+		return stations;
 	}
+
 	/**
-	 * @param station the station to set
+	 * @param stations
+	 *            the stations to set
 	 */
-	public void setStation(Set<Station> station) {
-		this.station = station;
+	public void setStations(Set<Station> stations) {
+		this.stations = stations;
 	}
-	
-	
-	
+
 }

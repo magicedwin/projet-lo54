@@ -8,10 +8,10 @@
 		</id>
 		<property name="label" column="Sen_Label" type="string"
 			not-null="true" />
-		<many-to-one name="sta_id" class="Station">
+		<many-to-one name="station" class="Station">
 			<column name="Sta_Id" not-null="true"></column>
 		</many-to-one>
-		<set name="temperature" table="temperature" fetch="select">
+		<set name="temperatures" table="temperature" fetch="select">
 			<key>
 				<column name="Sen_Id" not-null="true"></column>
 			</key>

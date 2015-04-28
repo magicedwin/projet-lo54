@@ -9,7 +9,7 @@
 		<property name="value" column="Tmp_Value" type="float"
 			not-null="true" />
 		<property name="date" column="Tmp_Date" type="date" not-null="true" />
-		<many-to-one name="sen_id" class="Sensor">
+		<many-to-one name="sensor" class="Sensor">
             <column name="Sen_Id" not-null="true"></column>
         </many-to-one>
 	</class>

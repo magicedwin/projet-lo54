@@ -5,16 +5,17 @@
 <hibernate-mapping package="fr.utbm.core.entity">
 	<class name="Station" table="station">
 		<id name="id" column="Sta_Id">
+			<generator class="native"></generator>
 		</id>
 		<property name="label" column="Sta_Label" type="string"
 			not-null="true" />
-		<many-to-one name="are_id" class="Station">
+		<many-to-one name="area" class="Area">
 			<column name="Are_Id" not-null="true"></column>
 		</many-to-one>
 		<property name="lastcom" column="Sta_Lastcom" type="date" />
 		<property name="valid" column="Sta_Valid" type="byte"
 			not-null="true" />
-		<set name="sensor" table="sensor" fetch="select">
+		<set name="sensors" table="sensor" inverse="true" fetch="select">
 			<key>
 				<column name="Sta_Id" not-null="true"></column>
 			</key>
